@@ -1,0 +1,124 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family:  Montserrat, Arial, Helvetica, sans-serif;
+    background-color: #F7F7FD;
+}
+
+.layout{
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main{
+    width: 50rem;
+    margin-top: 15rem;
+}
+.main__search{
+    display: flex;
+    justify-content: center;
+    background-color: #48CFCB;
+    padding: 3rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.search__input{
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+}
+
+.search__btn {
+    padding: 1rem;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #F7F7FD;
+}
+
+.main__users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #48CFCB;
+    border-radius: 0 0 5px 5px;
+    max-height: 60rem;
+    overflow: auto;
+}
+
+.users__user{
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    border-bottom: 1px solid #ccc;
+    background: #ffff;
+    padding: 4rem;
+}
+
+.user__container-img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.user__img{
+    width: 100%;
+    height: auto;
+}
+
+.user__content{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem ;
+}
+
+.user__name{
+    font-weight: 600;
+}
+.user__email{
+    font-weight: 500;
+    color: #666;
+}
+
+.main__users::-webkit-scrollbar{
+    width: 3rem;
+    background-color: #fff;
+}
+
+.main__users::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    border: 1.2rem solid transparent;
+    box-shadow: inset 0 0 0 1rem #48CFCB;
+}
+
+.main__users::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+@supports (-moz-appearance: none){
+    .main__users{
+        scrollbar-width: thin;
+        scrollbar-color: #48CFCB transparent;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+
